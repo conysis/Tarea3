@@ -9,8 +9,11 @@ namespace CitasServer.Models
 {
     public class Especialidad
     {
+        [Key]
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Este campo es obligatorio")]
+        [Column(TypeName = "nvarchar(25)")]
         public string Nombre { get; set; }
 
     }

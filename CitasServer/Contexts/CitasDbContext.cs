@@ -27,10 +27,25 @@ namespace CitasServer.Contexts
                 new Cita(){
                     Id=1,
                     DocId="108370630",
+                    Nombre="Alexander",
+                    Apellido1="Goicoechea",
+                    Apellido2="Chavarría"
+                },
+                new Cita(){
+                    Id=2,
+                    DocId="111111111",
                     Nombre="Norberth",
                     Apellido1="Brunner",
-                    Apellido2="Aguero"
+                    Apellido2="Agüero"
+                },
+                new Cita(){
+                    Id=3,
+                    DocId="202220222",
+                    Nombre="Manuel",
+                    Apellido1="Gaviria",
+                    Apellido2="Del Monte"
                 }
+
             };
         return citas;
         }

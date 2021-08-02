@@ -9,14 +9,15 @@ namespace CitasServer
 {
     public class GreeterService : Greeter.GreeterBase
     {
-        private readonly ILogger<GreeterService> _logger;
+        private readonly ILogger<GreeterService> Tlogger;
         public GreeterService(ILogger<GreeterService> logger)
         {
-            _logger = logger;
+            Tlogger = logger;
         }
 
         public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
         {
+            Tlogger.LogInformation("Enviando respuesta de la Cita");
             return Task.FromResult(new HelloReply
             {
                 Message = "¡Saludos! " + request.Name

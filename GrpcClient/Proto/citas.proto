@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "CitasServer.Protos";
+
+//Definición del servicio Citas
+service RemoteCitas {
+	rpc GetCitasInfo (CitasLookupModel) returns (CitasModel);
+}
+
+// Mensaje de petición
+message CitasLookupModel {
+	int32 Id =1;
+}
+
+message CitasModel {
+	int32 Id = 1;
+	string FecaCreacion = 2;
+	string DocId = 3;
+	string Nombre = 4;
+	string Apellido1 = 5;
+    string Apellido2 = 6;
+}
