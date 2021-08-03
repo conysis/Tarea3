@@ -16,6 +16,7 @@ namespace CitasServer.Contexts
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Cita>().HasData(
+                
                 GetCitas()
                 );
         }

@@ -1,10 +1,18 @@
 ﻿@page
-@model ListarModel
+@model CitasClient.Pages.ListarModel
 @{
     ViewData["Title"] = "Listar Citas";
 }
 
 <div class="text-center">
     <h1 class="display-4">Listar Citas</h1>
+    <form method="post">
+        Identificación: <input asp-for="Name" />
+        <button>Consultar</button>
+    </form>
+    <hr />
+    <div>
+        @Model.Message
+    </div>
     <p>Programa para control de visitas para la UNED.</p>
 </div>

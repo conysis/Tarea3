@@ -4,4 +4,19 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.38.0" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.38.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CitasServer\CitasServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\CitasServer\Protos\greet.proto" GrpcServices="Client">
+      <Link>Protos\greet.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
 </Project>

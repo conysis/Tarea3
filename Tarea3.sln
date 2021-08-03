@@ -6,8 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasServer", "CitasServer\CitasServer.csproj", "{99A925AF-868D-4F7D-96C0-77EC417C7EDD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{0450C4A9-DD9B-4865-A3BC-6F964FB6F184}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99A925AF-868D-4F7D-96C0-77EC417C7EDD} = {99A925AF-868D-4F7D-96C0-77EC417C7EDD}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasClient", "CitasClient\CitasClient.csproj", "{867A4E15-574A-4D5D-B750-CBD6B61C8630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasClient", "CitasClient\CitasClient.csproj", "{867A4E15-574A-4D5D-B750-CBD6B61C8630}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
